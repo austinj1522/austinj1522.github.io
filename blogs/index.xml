@@ -8,12 +8,21 @@
     <language>en-us</language>
     <lastBuildDate>Sat, 14 Oct 2023 00:43:57 -0500</lastBuildDate><atom:link href="https://austinj1522.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>First</title>
+      <title>About this Website!</title>
+      <link>https://austinj1522.github.io/blogs/website/</link>
+      <pubDate>Sat, 14 Oct 2023 00:43:57 -0500</pubDate>
+      
+      <guid>https://austinj1522.github.io/blogs/website/</guid>
+      <description>How I built this website, and how you can too! Hey, thanks for checking out this post. This will be a quick read on how I host and maintain this website! To get started, you&#39;ll need a github account, and the following software installed: git GO programming language Hugo Depending on what operating system you are using, you may need to install the software differently. I used a Windows computer to create and maintain this site, so I&#39;ll be explaining this in that syntax.</description>
+    </item>
+    
+    <item>
+      <title>Welcome</title>
       <link>https://austinj1522.github.io/blogs/first/</link>
       <pubDate>Sat, 14 Oct 2023 00:43:57 -0500</pubDate>
       
       <guid>https://austinj1522.github.io/blogs/first/</guid>
-      <description></description>
+      <description>Welcome to my personal website!	This is my personal website! Feel free to browse to view my education, background, and professional experience. You can also see some of my personal projects and certifications I have taken, or plan on taking in the near future. My next post will explain how I built this website, and what skills were required to do so. Subsequent posts will explain projects I am actively engaged in, so stick around to find out more!</description>
     </item>
     
   </channel>

@@ -28,16 +28,16 @@
 
 
 
-<meta property="og:title" content="Welcome" />
-<meta property="og:description" content="Welcome to my personal website!	This is my personal website! Feel free to browse to view my education, background, and professional experience. You can also see some of my personal projects and certifications I have taken, or plan on taking in the near future. My next post will explain how I built this website, and what skills were required to do so. Subsequent posts will explain projects I am actively engaged in, so stick around to find out more!" />
+<meta property="og:title" content="About this Website!" />
+<meta property="og:description" content="How I built this website, and how you can too! Hey, thanks for checking out this post. This will be a quick read on how I host and maintain this website! To get started, you&#39;ll need a github account, and the following software installed: git GO programming language Hugo Depending on what operating system you are using, you may need to install the software differently. I used a Windows computer to create and maintain this site, so I&#39;ll be explaining this in that syntax." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://austinj1522.github.io/blogs/first/" /><meta property="article:section" content="blogs" />
+<meta property="og:url" content="https://austinj1522.github.io/blogs/website/" /><meta property="article:section" content="blogs" />
 <meta property="article:published_time" content="2023-10-14T00:43:57-05:00" />
 <meta property="article:modified_time" content="2023-10-14T00:43:57-05:00" /><meta property="og:site_name" content="Welcome" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Welcome"/>
-<meta name="twitter:description" content="Welcome to my personal website!	This is my personal website! Feel free to browse to view my education, background, and professional experience. You can also see some of my personal projects and certifications I have taken, or plan on taking in the near future. My next post will explain how I built this website, and what skills were required to do so. Subsequent posts will explain projects I am actively engaged in, so stick around to find out more!"/>
+<meta name="twitter:title" content="About this Website!"/>
+<meta name="twitter:description" content="How I built this website, and how you can too! Hey, thanks for checking out this post. This will be a quick read on how I host and maintain this website! To get started, you&#39;ll need a github account, and the following software installed: git GO programming language Hugo Depending on what operating system you are using, you may need to install the software differently. I used a Windows computer to create and maintain this site, so I&#39;ll be explaining this in that syntax."/>
 
 
 <link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
@@ -108,7 +108,7 @@
 <script defer src="/fontawesome-5/all-5.15.4.js"></script>
 
   <title>
-Welcome | Austin&#39;s Website
+About this Website! | Austin&#39;s Website
 
   </title>
 </head>
@@ -288,9 +288,9 @@ Welcome | Austin&#39;s Website
       <div class="col-sm-12 col-md-12 col-lg-9">
         <div class="pr-lg-4">
           <div class="title mb-5">
-            <h1 class="text-center mb-4">Welcome</h1>
+            <h1 class="text-center mb-4">About this Website!</h1>
             <div class="text-center">
-               
+              Austin John 
               <small>|</small>
               Oct 14, 2023
 
@@ -303,9 +303,78 @@ Welcome | Austin&#39;s Website
           </div>
           
           <article class="page-content  p-2">
-          <h1>Welcome to my personal website!</h1>	
-<p> This is my personal website! Feel free to browse to view my education, background, and professional experience. You can also see some of my personal projects and certifications I have taken, or plan on taking in the near future.   </p>
-<p> My next post will explain how I built this website, and what skills were required to do so. Subsequent posts will explain projects I am actively engaged in, so stick around to find out more! </p>
+          <h1> How I built this website, and how you can too! </h1>
+<p> Hey, thanks for checking out this post. This will be a quick read on how I host and maintain this website! To get started, you'll need a github account, and the following software installed: </p>
+<ul> 
+    <li> git </li>
+    <li> GO programming language </li>
+    <li> Hugo </li>
+</ul>
+<p> Depending on what operating system you are using, you may need to install the software differently. I used a Windows computer to create and maintain this site, so I'll be explaining this in that syntax. If you need additional help, you can reach out to me, or check out the official Hugo website's documentation tab for more information.</p>
+<p>If this is your first time using Git, you may also need to configure git by setting global email and username.</p>
+<h3> Github </h3>
+<p> To get started, you're going to want to create 2 github repositories and clone them to your computer. The first repository will store the website files where you actively edit and make changes. The other repository will store the static files of the website, which Hugo will automatically generate when you build it with the Hugo command.  </p>
+<ol>
+    <li>Static File Repository</li>
+        <ul>
+            <li> When making this repository, name it accordingly with the following ending. For me as it was a personal website, I named the repository "austinj1522.github.io". Clone this repository to your local computer.  </li>
+        </ul>
+    <li>Active Repository</li>
+        <ul>
+            <li> When making this repository, name it whatever you'd like! For me, I named it "website" to make organization easier on my end. Clone this repository to your local computer.</li>
+        </ul>
+</ol>
+<h3> Hugo </h3>
+<p>Hugo makes building websites incredibly easy. To start, first open a command prompt window and navigate to your active repository, in my case &ldquo;website&rdquo;. Run the following command</p>
+<blockquote>
+<p><code>hugo new site WebsiteNameHere</code></p>
+</blockquote>
+<p>Next, reopen the window which contains the theme you selected. Copy the github clone link. Change directory to the WebsiteNameHere directory, and then run the following commands.</p>
+<blockquote>
+<p><code> cd themes </code></p>
+</blockquote>
+<blockquote>
+<p><code> git clone GithubLinkHere </code></p>
+</blockquote>
+<p>Your new website theme can now use the pre-built theme you selected. Just a couple more steps&hellip;</p>
+<p>Open your website and find the config.yaml file. If it doesn&rsquo;t have one, create one! This file will be used to configure the website, and in this case will specify the theme for the site. To do this, open the file and create a new line below &ldquo;title&rdquo; Specify the theme by entering the following (my theme&rsquo;s name is hugo-profile):</p>
+<blockquote>
+<p>theme: hugo-profile</p>
+</blockquote>
+<p>Some themes may have slightly different syntaxes, be sure to check out the ReadMe of the theme to find out more about variations!</p>
+<p>Your header of your config.yaml file should look similar to the following, except with your repo and theme names:</p>
+<blockquote>
+<p>baseURL: &ldquo;<a href="https://austinj1522.github.io">https://austinj1522.github.io</a>&rdquo; <br>
+languageCode: &ldquo;en-us&rdquo; <br>
+title: &ldquo;Austin&rsquo;s Website&rdquo; <br>
+theme: hugo-profile</p>
+</blockquote>
+<p>Your base website should now be running with the theme you selected. To test this, navigate to the WebsiteNameHere repository in your command prompt and run the following command:</p>
+<blockquote>
+<p><code>hugo server</code></p>
+</blockquote>
+<p>You should see it build and then deploy the site on localhost:1313, may be different in some cases.</p>
+<h3> Connect Repositories</h3>
+<p>Now that the website has been created, you can begin to add your information and customize it however you&rsquo;d like. The last step is to connect the repositories so that whenever you build the website, it automatically deploys on Github Pages. To do this, we will need to add a git submodule.</p>
+<ol>
+<li>Open command prompt and naviagate to WebsiteNameHere repository.
+<ul>
+<li>
+<p>Run the following command:</p>
+<blockquote>
+<p><code>git submodule add -b main githubLinkHere public</code></p>
+</blockquote>
+<ul>
+<li>&ldquo;main&rdquo; refers to the branch of the repository you will be committing</li>
+<li>githubLinkHere should be the github clone link of the Static File        Repository you created earlier. Keep in mind, we haven&rsquo;t touched or used this repository yet apart from cloning it to our local computer and initializing it.</li>
+<li>&ldquo;public&rdquo; specifies the folder that will be the folder you are deploying from. &ldquo;public&rdquo; is the name of the folder that gets automatically generated whenever you build the website, so that&rsquo;s why we specify &ldquo;public&rdquo;.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p>To confirm if you have correctly connected the repositories, check the git origins of the public folder, and of your WebsiteNameHere folder. The public folder should  be pulling/pushing to your static file repository, and your WebsiteNameHere folder should be Active Repository</p>
+<p>Please make sure you check the ReadME and intructions of the prebuilt theme you select. Not all of them work the same way and some have slight variations in syntax, so to avoid errors, read ahead!</p>
 
           </article>
         </div>
@@ -331,17 +400,17 @@ Welcome | Austin&#39;s Website
             <div class="social-content">
               <ul class="list-inline">
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href="https://twitter.com/share?text=Welcome&url=https%3a%2f%2faustinj1522.github.io%2fblogs%2ffirst%2f">
+                  <a target="_blank" href="https://twitter.com/share?text=About%20this%20Website%21&url=https%3a%2f%2faustinj1522.github.io%2fblogs%2fwebsite%2f">
                     <i class="fab fa-twitter"></i>
                   </a>
                 </li>
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href="https://api.whatsapp.com/send?text=Welcome: https%3a%2f%2faustinj1522.github.io%2fblogs%2ffirst%2f">
+                  <a target="_blank" href="https://api.whatsapp.com/send?text=About%20this%20Website%21: https%3a%2f%2faustinj1522.github.io%2fblogs%2fwebsite%2f">
                     <i class="fab fa-whatsapp"></i>
                   </a>
                 </li>
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href='mailto:?subject=Welcome&amp;body=Check%20out%20this%20site https%3a%2f%2faustinj1522.github.io%2fblogs%2ffirst%2f'>
+                  <a target="_blank" href='mailto:?subject=About%20this%20Website%21&amp;body=Check%20out%20this%20site https%3a%2f%2faustinj1522.github.io%2fblogs%2fwebsite%2f'>
                     <i class="fa fa-envelope"></i>
                   </a>
                 </li>
