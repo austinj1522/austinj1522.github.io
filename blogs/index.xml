@@ -6,7 +6,17 @@
     <description>Recent content in Blogs on Austin&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Oct 2023 00:43:57 -0500</lastBuildDate><atom:link href="https://austinj1522.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 Oct 2023 00:43:57 -0500</lastBuildDate><atom:link href="https://austinj1522.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setting up a Domain</title>
+      <link>https://austinj1522.github.io/blogs/customdomain/</link>
+      <pubDate>Tue, 17 Oct 2023 00:43:57 -0500</pubDate>
+      
+      <guid>https://austinj1522.github.io/blogs/customdomain/</guid>
+      <description>A Step-by-step Guide to Custom Domains with Github To add a custom domain to your newly created website, the process is fairly simply. For this process, I&amp;rsquo;ll be referring to the same project discussed in my previous post that is this website which is hosted via Github Pages.
+Step 1 - Purchase Domain The first step of this process is going to be to purchase your preferred domain via a domain provider.</description>
+    </item>
+    
     <item>
       <title>About this Website!</title>
       <link>https://austinj1522.github.io/blogs/website/</link>
