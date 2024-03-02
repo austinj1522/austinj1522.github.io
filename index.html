@@ -40,18 +40,6 @@ if (!doNotTrack) {
 }
 </script>
 
-
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'G-WPK24T662R', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
 <meta property="og:title" content="Austin&#39;s Website" />
 <meta property="og:description" content="This is my personal website!" />
 <meta property="og:type" content="website" />
@@ -100,19 +88,18 @@ if (!doNotTrack) {
     }
 
     body::-webkit-scrollbar {
-        width: .5em;
-        height: .5em;
+        height: 0px;
+        width: 8px;
         background-color: var(--background-color);
     }
     
     ::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 6px var(--background-color);
         border-radius: 1rem;
     }
     
     ::-webkit-scrollbar-thumb {
         border-radius: 1rem;
-        background-color: var(--secondary-color);
+        background: #b0b0b0;
         outline: 1px solid var(--background-color);
     }
 
@@ -128,16 +115,7 @@ if (!doNotTrack) {
 <link rel="stylesheet" href="/css/projects.css" media="all">
 
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WPK24T662R"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-WPK24T662R');
-</script>
-
-<script defer src="/fontawesome-5/all-5.15.4.js"></script>
+<script defer src="/fontawesome-6/all-6.4.2.js"></script>
 
   <title>
 Austin&#39;s Website
@@ -166,35 +144,12 @@ Austin&#39;s Website
             break;
     }
 </script>
-<head>
-    
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WPK24T662R"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-WPK24T662R', { 'anonymize_ip': false });
-}
-</script>
-
-    
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'G-WPK24T662R', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
-</head>
 
 
-<header>
+
+
+
+<header id="profileHeader">
     <nav class="pt-3 navbar navbar-expand-lg animate">
         <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
             
@@ -338,15 +293,7 @@ if (!doNotTrack) {
         </div>
     </nav>
 </header>
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WPK24T662R"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-WPK24T662R');
-</script><div id="content">
+<div id="content">
 <section id="hero" class="py-5 align-middle">
     <div class="container px-3 px-sm-5 px-md-5 px-lg-5 pt-lg-3">
         <div class="row">
@@ -687,9 +634,9 @@ if (!doNotTrack) {
                 Here are a few tools I&#39;ve been working with recently:
                 <ul>
                     
-                    <li>Python</li>
+                    <li>PowerShell/Bash Scripting</li>
                     
-                    <li>Linux</li>
+                    <li>Azure ADF</li>
                     
                     <li>ServiceNow</li>
                     
@@ -755,9 +702,9 @@ if (!doNotTrack) {
                                 aria-selected="true" 
                                 role="tab" 
                                 data-bs-toggle="pill"
-                                id='TAMU-Expected-Grad---May-2024-tab'
-                                data-bs-target='#pills-TAMU-Expected-Grad---May-2024' 
-                                aria-controls='TAMU-Expected-Grad---May-2024'
+                                id='TAMU-May-2024-tab'
+                                data-bs-target='#pills-TAMU-May-2024' 
+                                aria-controls='TAMU-May-2024'
                             >
                                 TAMU
                             </div>
@@ -771,11 +718,11 @@ if (!doNotTrack) {
                                 aria-selected="true" 
                                 role="tab" 
                                 data-bs-toggle="pill"
-                                id='Rolls-Royce-Aero-R&amp;D-Jun-2017--Jun-2018-tab'
-                                data-bs-target='#pills-Rolls-Royce-Aero-R&amp;D-Jun-2017--Jun-2018' 
-                                aria-controls='Rolls-Royce-Aero-R&amp;D-Jun-2017--Jun-2018'
+                                id='Rolls-Royce-Jun-2017-Jun-2018-tab'
+                                data-bs-target='#pills-Rolls-Royce-Jun-2017-Jun-2018' 
+                                aria-controls='Rolls-Royce-Jun-2017-Jun-2018'
                             >
-                                Rolls Royce Aero R&amp;D
+                                Rolls Royce
                             </div>
                         </li>
                         
@@ -862,8 +809,8 @@ if (!doNotTrack) {
                         <div 
                             class="tab-pane fade bg-transparent" 
                             role="tabpanel"
-                            id='pills-TAMU-Expected-Grad---May-2024'
-                            aria-labelledby='pills-TAMU-Expected-Grad---May-2024-tab'
+                            id='pills-TAMU-May-2024'
+                            aria-labelledby='pills-TAMU-May-2024-tab'
                         >
                             <div>
                                 <span class="h4">Undergraduate Student</span>
@@ -871,7 +818,7 @@ if (!doNotTrack) {
                                 <a href="https://catalog.tamu.edu/undergraduate/engineering/technology-industrial-distribution/technology-management-bs/" target="_blank">TAMU</a>
                                 
                                 <div class="pb-1">
-                                    <small>Expected Grad - May 2024</small>
+                                    <small>May 2024</small>
                                     
                                     <span class="p-2">
                                         <span 
@@ -919,23 +866,23 @@ if (!doNotTrack) {
                         <div 
                             class="tab-pane fade bg-transparent" 
                             role="tabpanel"
-                            id='pills-Rolls-Royce-Aero-R&amp;D-Jun-2017--Jun-2018'
-                            aria-labelledby='pills-Rolls-Royce-Aero-R&amp;D-Jun-2017--Jun-2018-tab'
+                            id='pills-Rolls-Royce-Jun-2017-Jun-2018'
+                            aria-labelledby='pills-Rolls-Royce-Jun-2017-Jun-2018-tab'
                         >
                             <div>
-                                <span class="h4">Industrial Intern</span>
+                                <span class="h4">Intern</span>
                                 <small>-</small>
-                                <a href="https://careers.rolls-royce.com/united-kingdom/students-and-graduates/work-experience" target="_blank">Rolls Royce Aero R&amp;D</a>
+                                <a href="https://catalog.tamu.edu/undergraduate/engineering/technology-industrial-distribution/technology-management-bs/" target="_blank">Rolls Royce</a>
                                 
                                 <div class="pb-1">
-                                    <small>Jun 2017  Jun 2018</small>
+                                    <small>Jun 2017 Jun 2018</small>
                                     
                                     <span class="p-2">
                                         <span 
                                             style="cursor: pointer;" 
                                             data-bs-toggle="tooltip" 
                                             data-bs-placement="top" 
-                                            data-bs-original-title=Worked&#32;as&#32;a&#32;Industrial&#32;Intern&#32;at&#32;Rolls&#32;Royce&#32;Aero&#32;R&amp;D
+                                            data-bs-original-title=Interned&#32;for&#32;2&#32;summers&#32;with&#32;the&#32;R&amp;D&#32;department
                                         > 
                                             <i class="fas fa-info-circle fa-xs"></i>
                                         </span>
@@ -947,7 +894,7 @@ if (!doNotTrack) {
                             </div>
 
                             <div class="pt-2">
-                                <p>Rolls-Royce Aero Department, FACT/HST Industrial Intern, on-site in Derby, UK</p>
+                                <p>Rolls-Royce Aero Research and Development, FACT/HST Industrial Intern, on-site in Derby, UK</p>
 <ul>
 <li>(2018) Worked with the Future Aircraft Concepts Team (FACT) on the Electric Vertical Takeoff &amp; Lift (eVTOL) program</li>
 <li>(2017) Worked with the Horizon Scanning Team (HST), conducting market research on the reusable space rockets</li>
@@ -984,7 +931,7 @@ if (!doNotTrack) {
                                 <h5 class="card-title">Bachelor of Science in Technology Management, Minor in Business Administration</h5>
                                 
                                 
-                                <a href="https://www.tamu.edu/" target="_blank">
+                                <a href="https://catalog.tamu.edu/undergraduate/engineering/technology-industrial-distribution/technology-management-bs/#programrequirementstext" target="_blank">
                                     <h6>
                                     Texas A&amp;M University - College Station
                                     </h6>
@@ -1095,7 +1042,7 @@ if (!doNotTrack) {
                         <div class="card-body bg-transparent">
                             <h5 class="card-title bg-transparent">Azure Security Engineer Associate</h5>
                             <div class="card-text secondary-font">
-                                In Progress (AZ-500 Exam - 03/16/2024)
+                                In Progress (AZ-500 - 03/16/2024)
                             </div>
                         </div>
                     </a>
@@ -1399,12 +1346,7 @@ Step 1 - Purchase …</p>
     
 
     
-</div>
-    <div id="visitor-count"></div>
-
-    <div id="visitor-count"></div><script src="/js/visitor-count.js"></script>
-
-    <div class="container py-4">
+</div><div class="container py-4">
     <div class="row justify-content-center">
         <div class="col-md-4 text-center">
             <div class="pb-2">
@@ -1415,27 +1357,19 @@ Step 1 - Purchase …</p>
             </div>
             &copy; 2024  All rights reserved
             <div class="text-secondary">
+                Made with
+                <span class="text-danger">
+                    &#10084;
+                </span>
+                and
                 <a href="https://github.com/gurusabarish/hugo-profile" target="_blank"
                     title="Designed and developed by gurusabarish">
-                    Hugo-Profile 
-                
-                
+                    Hugo Profile
                 </a>
-                Adapted by Austin John
             </div>
         </div>
     </div>
-</div>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WPK24T662R"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-WPK24T662R');
-    </script>
-
-</footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+</div></footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');

@@ -39,18 +39,6 @@ if (!doNotTrack) {
 }
 </script>
 
-
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'G-WPK24T662R', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
 <meta property="og:title" content="About this Website!" />
 <meta property="og:description" content="How I built this website, and how you can too! Hey, thanks for checking out this post. This will be a quick read on how I host and maintain this website! Keep in mind, this post is written with the assumption that you are familiar with programming languages, version control, and some HTML/Markdown experience. To get started, you&#39;ll need a github account, and the following software installed: git GO programming language Hugo Depending on what operating system you are using, you may need to install the software differently." />
 <meta property="og:type" content="article" />
@@ -101,19 +89,18 @@ if (!doNotTrack) {
     }
 
     body::-webkit-scrollbar {
-        width: .5em;
-        height: .5em;
+        height: 0px;
+        width: 8px;
         background-color: var(--background-color);
     }
     
     ::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 6px var(--background-color);
         border-radius: 1rem;
     }
     
     ::-webkit-scrollbar-thumb {
         border-radius: 1rem;
-        background-color: var(--secondary-color);
+        background: #b0b0b0;
         outline: 1px solid var(--background-color);
     }
 
@@ -128,7 +115,7 @@ if (!doNotTrack) {
 <link rel="stylesheet" href="/css/single.css">
 
 
-<script defer src="/fontawesome-5/all-5.15.4.js"></script>
+<script defer src="/fontawesome-6/all-6.4.2.js"></script>
 
   <title>
 About this Website! | Austin&#39;s Website
@@ -157,35 +144,12 @@ About this Website! | Austin&#39;s Website
             break;
     }
 </script>
-<head>
-    
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WPK24T662R"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-WPK24T662R', { 'anonymize_ip': false });
-}
-</script>
-
-    
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'G-WPK24T662R', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
-</head>
 
 
-<header>
+
+
+
+<header id="profileHeader">
     <nav class="pt-3 navbar navbar-expand-lg animate">
         <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
             
@@ -329,15 +293,7 @@ if (!doNotTrack) {
         </div>
     </nav>
 </header>
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WPK24T662R"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-WPK24T662R');
-</script><div id="content">
+<div id="content">
 <section id="single">
   <div class="container">
     <div class="row justify-content-center">
@@ -356,11 +312,6 @@ if (!doNotTrack) {
               </span>
               
             </div>
-            <div class="views">
-              <span class="views">
-                  <img src="https://visitor-badge.glitch.me/badge?page_id=https%3a%2f%2faustinj1522.github.io%2fblogs%2fwebsite%2f" alt="Views"/>
-              </span>
-          </div>
           </div>
           
           <article class="page-content  p-2">
@@ -441,7 +392,7 @@ theme: hugo-profile</p>
         </div>
       </div>
       <div class="col-sm-12 col-md-12 col-lg-3">
-        <div class="sticky-sidebar">
+        <div id="stickySideBar" class="sticky-sidebar">
           
           <aside class="toc">
               <h5>
@@ -515,6 +466,17 @@ theme: hugo-profile</p>
   function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
+  }
+
+  
+  let stickySideBarElem = document.getElementById("stickySideBar");
+  let stickyNavBar =  false ;
+  if(stickyNavBar) {
+    let headerElem = document.getElementById("profileHeader");
+    let headerHeight = headerElem.offsetHeight + 15;
+    stickySideBarElem.style.top = headerHeight + "px";
+  } else {
+    stickySideBarElem.style.top = "50px";
   }
 </script>
 
@@ -640,12 +602,7 @@ Step 1 - Purchase …</p>
     
 
     
-</div>
-    <div id="visitor-count"></div>
-
-    <div id="visitor-count"></div><script src="/js/visitor-count.js"></script>
-
-    <div class="container py-4">
+</div><div class="container py-4">
     <div class="row justify-content-center">
         <div class="col-md-4 text-center">
             <div class="pb-2">
@@ -656,27 +613,19 @@ Step 1 - Purchase …</p>
             </div>
             &copy; 2024  All rights reserved
             <div class="text-secondary">
+                Made with
+                <span class="text-danger">
+                    &#10084;
+                </span>
+                and
                 <a href="https://github.com/gurusabarish/hugo-profile" target="_blank"
                     title="Designed and developed by gurusabarish">
-                    Hugo-Profile 
-                
-                
+                    Hugo Profile
                 </a>
-                Adapted by Austin John
             </div>
         </div>
     </div>
-</div>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WPK24T662R"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-WPK24T662R');
-    </script>
-
-</footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+</div></footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
