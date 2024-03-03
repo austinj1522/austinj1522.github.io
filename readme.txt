@@ -1,3 +1,3 @@
 read this!
 
-check out this website@ https://austinj1522.github.io/
+check out this website@ https://www.austinloganjohn.com/
