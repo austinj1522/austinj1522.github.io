@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-	<meta name="generator" content="Hugo 0.126.3"><meta charset="UTF-8">
+	<meta name="generator" content="Hugo 0.148.2"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
-<link rel="icon" href=/photos/landing.png type="image/gif">
+<link rel="icon" href=/fav.png type="image/gif">
 
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,60 +29,39 @@
 
 
 
-  
-    
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-1TFL3GS5L5"></script>
-      <script>
-        var doNotTrack = false;
-        if ( false ) {
-          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
-          var doNotTrack = (dnt == "1" || dnt == "yes");
-        }
-        if (!doNotTrack) {
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-1TFL3GS5L5');
-        }
-      </script>
-    
-  
-
-
-<meta property="og:url" content="https://austinj1522.github.io/">
-  <meta property="og:site_name" content="Austin&#39;s Portfolio">
-  <meta property="og:title" content="Austin&#39;s Portfolio">
-  <meta property="og:description" content="This is my portfolio website which will provide greater detail, outside of what&#39;s in my resume.">
+<meta property="og:url" content="http://localhost:1313/">
+  <meta property="og:site_name" content="ALJ - Portfolio Website">
+  <meta property="og:title" content="ALJ - Portfolio Website">
+  <meta property="og:description" content="A portfolio/resume website">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="website">
 
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Austin&#39;s Portfolio">
-  <meta name="twitter:description" content="This is my portfolio website which will provide greater detail, outside of what&#39;s in my resume.">
+  <meta name="twitter:title" content="ALJ - Portfolio Website">
+  <meta name="twitter:description" content="A portfolio/resume website">
 
 
-<link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"><link rel="stylesheet" href="/css/header.css" media="all">
 <link rel="stylesheet" href="/css/footer.css" media="all">
 
 
 <link rel="stylesheet" href="/css/theme.css" media="all">
 
-
-
-
 <style>
     :root {
-        --text-color: #343a40;
-        --text-secondary-color: #6c757d;
+        --text-color: #323431;
+        --text-secondary-color: #0B814B;
+        --text-link-color: #6E9D88;
         --background-color: #eaedf0;
         --secondary-background-color: #64ffda1a;
-        --primary-color: #007bff;
+        --primary-color: #014B29;
         --secondary-color: #f8f9fa;
 
          
         --text-color-dark: #e4e6eb;
         --text-secondary-color-dark: #b0b3b8;
+        --text-link-color-dark: #ffffff;
         --background-color-dark: #18191a;
         --secondary-background-color-dark: #212529;
         --primary-color-dark: #ffffff;
@@ -104,11 +83,11 @@
         width: 8px;
         background-color: var(--background-color);
     }
-    
+
     ::-webkit-scrollbar-track {
         border-radius: 1rem;
     }
-    
+
     ::-webkit-scrollbar-thumb {
         border-radius: 1rem;
         background: #b0b0b0;
@@ -123,15 +102,20 @@
 </style>
 
 
-<meta name="description" content=This&#32;is&#32;my&#32;portfolio&#32;website&#32;which&#32;will&#32;provide&#32;greater&#32;detail,&#32;outside&#32;of&#32;what&#39;s&#32;in&#32;my&#32;resume.>
+
+<meta name="description" content=A&#32;portfolio/resume&#32;website>
 <link rel="stylesheet" href="/css/index.css" media="all">
 <link rel="stylesheet" href="/css/projects.css" media="all">
 
 
 <script defer src="/fontawesome-6/all-6.4.2.js"></script>
 
+
+  
+  
+
   <title>
-Austin&#39;s Portfolio
+ALJ - Portfolio Website
 
   </title>
 </head>
@@ -180,7 +164,7 @@ Austin&#39;s Portfolio
         if(resetHeaderStyle) {
             profileHeaderElem.classList.remove("showHeaderOnTop");
         }
-        prevScrollPos = currentScrollPos;        
+        prevScrollPos = currentScrollPos;
     });
 </script>
 
@@ -192,17 +176,12 @@ Austin&#39;s Portfolio
             
             <a class="navbar-brand primary-font text-wrap" href="/">
                 
-                <img src="/photos/landing.png" width="30" height="30"
+                <img src="/documents-banners/photos/landing.png" width="30" height="30"
                     class="d-inline-block align-top">
-                Austin John
+                  Portfolio
                 
             </a>
 
-            
-                <div>
-                    <input id="search" autocomplete="off" class="form-control mr-sm-2 d-none d-md-block" placeholder='Search'
-                        aria-label="Search" oninput="searchOnChange(event)">
-                </div>
             
 
             
@@ -216,12 +195,6 @@ Austin&#39;s Portfolio
             
             <div class="collapse navbar-collapse text-wrap primary-font" id="navbarContent">
                 <ul class="navbar-nav ms-auto text-center">
-                    
-                        <li class="nav-item navbar-text d-block d-md-none">
-                            <div class="nav-link">
-                                <input id="search" autocomplete="off" class="form-control mr-sm-2" placeholder='Search' aria-label="Search" oninput="searchOnChange(event)">
-                            </div>
-                        </li>
                     
 
                     
@@ -243,9 +216,9 @@ Austin&#39;s Portfolio
 
                     
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="/#achievements"
-                            aria-label="achievements">
-                            Industry Certifications
+                        <a class="nav-link" href="/#education"
+                            aria-label="education">
+                            Education
                         </a>
                     </li>
                     
@@ -254,20 +227,20 @@ Austin&#39;s Portfolio
                     <li class="nav-item navbar-text">
                         <a class="nav-link" href="/#projects"
                             aria-label="projects">
-                            Projects
+                            Research &amp; Projects
                         </a>
                     </li>
                     
 
                     
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="/#education"
-                            aria-label="education">
-                            Education
+                        <a class="nav-link" href="/#achievements"
+                            aria-label="achievements">
+                            Certifications
                         </a>
                     </li>
                     
-          
+
                     
                     <li class="nav-item navbar-text">
                         <a class="nav-link" href="/#contact"
@@ -278,40 +251,36 @@ Austin&#39;s Portfolio
                     
 
                     
+                        <li class="nav-item navbar-text d-none d-lg-block d-xl-block"><div class="nav-link nav-link-sep"></div></li>
+                        <div class="dropdown-divider"></div>
+                    
+
                     
                     
                     
-                    <li class="nav-item navbar-text">
-                        <a class="nav-link" href="https://www.austinhomelabs.com" title="Docs">
-                            
-                            Docs
+                    
+                    <li class="nav-item navbar-text dropdown">
+                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="DropDown Menu Label">
+                            Explore
                         </a>
+                        <div class="dropdown-menu shadow-lg rounded" aria-labelledby="navbarDropdown">
+                            
+                            <a class="dropdown-item text-center nav-link" href="https://austinhomelabs.com/"
+                                title="HomeLab Project Site Link">
+                                My HomeLab
+                            </a>
+                            
+                            <a class="dropdown-item text-center nav-link" href="/"
+                                title="example dropdown 2">
+                                example 2
+                            </a>
+                            
+                        </div>
                     </li>
                     
                     
 
-                    
-                    <li class="nav-item navbar-text">
-                        
-                        <div class="text-center">
-                            <button id="theme-toggle">
-                                <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                                </svg>
-                                <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="5"></circle>
-                                    <line x1="12" y1="1" x2="12" y2="3"></line>
-                                    <line x1="12" y1="21" x2="12" y2="23"></line>
-                                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                                    <line x1="1" y1="12" x2="3" y2="12"></line>
-                                    <line x1="21" y1="12" x2="23" y2="12"></line>
-                                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                                </svg>
-                            </button>
-                        </div>
-                    </li>
                     
 
                 </ul>
@@ -328,61 +297,56 @@ Austin&#39;s Portfolio
                 <span class="subtitle">
                     Hi, my name is
                 </span>
+                <h1>
+                    Austin.
+                </h1>
                 <h2>
-                    Austin
+                    IT Infrastructure Engineer
                 </h2>
-                <h3>
-                    IT Engineer
-                </h3>
                 <p class="hero-content">
-                    Texas A&amp;M University - College of Engineering, Emerging Technology &amp; Industrial Distribution
+                    A driven engineer specializing in cybersecurity project orchestration, IT Change Management, and Process Automation within the financial services sector.
                 </p>
                 <div class="row">
                     <div class="col-auto h-100">
                         
-                        <a href="https://austinhomelabs.com/" class="btn" ZgotmplZ
+                        <a href="/documents-banners/AustinJohn-Resume.pdf" class="btn" ZgotmplZ
 			  
                           target="_blank"
                           >
-                            Project Docs
+                            Resume
                         </a>
                         
                     </div>
                     <div class="col-auto px-0 h-100"><span>
     
     <span class="px-1">
-        <a href="https://austinhomelabs.com" target="_blank" class="btn social-icon">
-            <i class="fas fa-book"></i>
-        </a>
-    </span>
-    
-    <span class="px-1">
-        <a href="https://hub.docker.com/u/ajohn1522" target="_blank" class="btn social-icon">
-            <i class="fab fa-docker"></i>
-        </a>
-    </span>
-    
-    <span class="px-1">
-        <a href="https://www.linkedin.com/in/austinloganjohn/" target="_blank" class="btn social-icon">
-            <i class="fab fa-linkedin"></i>
-        </a>
-    </span>
-    
-    <span class="px-1">
-        <a href="https://github.com/austinj1522" target="_blank" class="btn social-icon">
+        <a href="https://github.com/austinj1522"
+             target="_blank" 
+            class="btn social-icon"
+        >
             <i class="fab fa-github"></i>
+        </a>
+    </span>
+    
+    <span class="px-1">
+        <a href="https://www.linkedin.com/in/austinloganjohn/"
+             target="_blank" 
+            class="btn social-icon"
+        >
+            <i class="fab fa-linkedin"></i>
         </a>
     </span>
     
 
     
-</span></div>
+</span>
+</div>
                 </div>
             </div>
             <div class="col-sm-12 col-md-12 col-lg-4">
                 <div class="row justify-content-center">
                     <div class="col-sm-12 col-md-9 pt-5 image animate px-5 px-md-5 px-lg-0 text-center">
-                        <img src="/photos/profile.JPG"
+                        <img src="/profile-photos/profile.JPG"
                             class="img-thumbnail mx-auto"
                             alt=""
                         >
@@ -664,37 +628,38 @@ Austin&#39;s Portfolio
             
             <div class="col-sm-12 col-md-8 col-lg-4 mb-5 mb-sm-0 mb-md-5 mb-lg-0 d-none d-sm-none d-md-block">
                 <div class="image d-flex px-5">
-                    <img src="/photos/b1.jpg" class="img-thumbnail mx-auto rounded-circle" alt="">
+                    <img src="/profile-photos/family.jpg" class="img-thumbnail mx-auto rounded-circle" alt="">
                 </div>
             </div>
             
             <div class="col-sm-12 col-md-12 col-lg-8 content">
-                I am an IT Engineer, with a focus on Infrastructure Security. I have an educational background in IT Service Management and cybersecurity with emerging technology. After completing high school in Edison, NJ, I pursued my undergraduate degree from Texas A&amp;M University in College Station, TX. There, I received my B.S. in Technology Management from the College of Engineering with a minor in Business Administration.
-Throughout my senior year of college, I worked as an IT contractor, first at BNY Mellon, and then at Truso Group. Upon graduating, I accepted an offer to join the North America division of eXalt-Fi (based in Paris) and consult for one of their largest clients, BNP Paribas, which is where I am currently working today.
+                <p>I am an IT Engineer, with a focus in Network &amp; Infrastructure Security. I have an educational background in IT Service Management and cybersecurity with emerging technology. After completing high school in Edison NJ, I pursued my B.S. Technology Management degree from the College of Engineering at Texas A&amp;M.</p>
+<p>Upon graduating, I accepted an offer to join Exalt-Fi North America and consult for BNP Paribas CIB Americas as an IT Production - Project Manager, where I currently work today.</p>
+
 
                 
-                Here are a few technologies I&#39;ve been working with recently:
+                Here are a few technologies &amp; topics I&#39;ve been working with recently: 
                 <ul>
                     
-                    <li>Excel VBA</li>
+                    <li>NIST SP-800</li>
                     
-                    <li>Power BI / Grafana</li>
+                    <li>NYDFS 23 NYCRR 500</li>
                     
-                    <li>Atlassian Suite (JIRA)</li>
+                    <li>CIS Controls - Version 8</li>
                     
-                    <li>MDMs (MS Intune)</li>
+                    <li>ISO 27001/2</li>
                     
-                    <li>OPNsense</li>
+                    <li>Vulnerability Scan Tooling (Tanium/Nexpose)</li>
                     
-                    <li>Zenarmor NGFW</li>
+                    <li>Process Automation (PowerShell/BASH)</li>
                     
-                    <li>Windows Server 2022</li>
+                    <li>Illumio Zero-Trust Network Segmentation</li>
                     
-                    <li>Azure Data Factory</li>
+                    <li>ETL Process Creation &amp; Administration (PowerBI)</li>
                     
-                    <li>Nessus Tenable</li>
+                    <li>Change Management (ITIL 4)</li>
                     
-                    <li>PowerShell &amp; BASH scripting</li>
+                    <li>Scaled Agile Project Management (SAFe 6.0)</li>
                     
                 </ul>
                 
@@ -718,9 +683,9 @@ Throughout my senior year of college, I worked as an IT contractor, first at BNY
                                 aria-selected="true" 
                                 role="tab" 
                                 data-bs-toggle="pill"
-                                id='BNP-Paribas-CIB-July-2024---present-tab'
-                                data-bs-target='#pills-BNP-Paribas-CIB-July-2024---present'
-                                aria-controls='BNP-Paribas-CIB-July-2024---present' 
+                                id='BNP-Paribas-CIB-Jul-2024---present-tab'
+                                data-bs-target='#pills-BNP-Paribas-CIB-Jul-2024---present'
+                                aria-controls='BNP-Paribas-CIB-Jul-2024---present' 
                             >
                                 BNP Paribas CIB
                             </div>
@@ -734,9 +699,9 @@ Throughout my senior year of college, I worked as an IT contractor, first at BNY
                                 aria-selected="true" 
                                 role="tab" 
                                 data-bs-toggle="pill"
-                                id='Truso-Jan-2024---July-2024-tab'
-                                data-bs-target='#pills-Truso-Jan-2024---July-2024' 
-                                aria-controls='Truso-Jan-2024---July-2024'
+                                id='Truso-Jul-2024---present-tab'
+                                data-bs-target='#pills-Truso-Jul-2024---present' 
+                                aria-controls='Truso-Jul-2024---present'
                             >
                                 Truso
                             </div>
@@ -750,9 +715,9 @@ Throughout my senior year of college, I worked as an IT contractor, first at BNY
                                 aria-selected="true" 
                                 role="tab" 
                                 data-bs-toggle="pill"
-                                id='BNY-Mellon-May-2023---December-2023-tab'
-                                data-bs-target='#pills-BNY-Mellon-May-2023---December-2023' 
-                                aria-controls='BNY-Mellon-May-2023---December-2023'
+                                id='BNY-Mellon-May-2023---Dec-2023-tab'
+                                data-bs-target='#pills-BNY-Mellon-May-2023---Dec-2023' 
+                                aria-controls='BNY-Mellon-May-2023---Dec-2023'
                             >
                                 BNY Mellon
                             </div>
@@ -766,9 +731,9 @@ Throughout my senior year of college, I worked as an IT contractor, first at BNY
                                 aria-selected="true" 
                                 role="tab" 
                                 data-bs-toggle="pill"
-                                id='TAMU-Jan-2023---present-tab'
-                                data-bs-target='#pills-TAMU-Jan-2023---present' 
-                                aria-controls='TAMU-Jan-2023---present'
+                                id='TAMU-Graduated-May-2024-tab'
+                                data-bs-target='#pills-TAMU-Graduated-May-2024' 
+                                aria-controls='TAMU-Graduated-May-2024'
                             >
                                 TAMU
                             </div>
@@ -782,9 +747,9 @@ Throughout my senior year of college, I worked as an IT contractor, first at BNY
                                 aria-selected="true" 
                                 role="tab" 
                                 data-bs-toggle="pill"
-                                id='Rolls-Royce-June-2018---August-2018-tab'
-                                data-bs-target='#pills-Rolls-Royce-June-2018---August-2018' 
-                                aria-controls='Rolls-Royce-June-2018---August-2018'
+                                id='Rolls-Royce-Feb-2016---Mar-2017-tab'
+                                data-bs-target='#pills-Rolls-Royce-Feb-2016---Mar-2017' 
+                                aria-controls='Rolls-Royce-Feb-2016---Mar-2017'
                             >
                                 Rolls Royce
                             </div>
@@ -798,22 +763,22 @@ Throughout my senior year of college, I worked as an IT contractor, first at BNY
                         <div 
                             class="tab-pane fade show active bg-transparent" 
                             role="tabpanel"
-                            id='pills-BNP-Paribas-CIB-July-2024---present'
-                            aria-labelledby='pills-BNP-Paribas-CIB-July-2024---present-tab'
+                            id='pills-BNP-Paribas-CIB-Jul-2024---present'
+                            aria-labelledby='pills-BNP-Paribas-CIB-Jul-2024---present-tab'
                         >
                             <div>
-                                <span class="h4">IT Production - Technology Consultant</span>
+                                <span class="h4">IT Business Analyst / Project Manager</span>
                                 <small>-</small>
-                                <a href="https://group.bnpparibas/en/" target="_blank">BNP Paribas CIB</a>
+                                <a href="https://cib.bnpparibas/" target="_blank">BNP Paribas CIB</a>
                                 <div class="pb-1">
-                                    <small>July 2024 - present</small>
+                                    <small>Jul 2024 - present</small>
                                     
                                     <span class="p-2">
                                         <span 
                                             style="cursor: pointer;" 
                                             data-bs-toggle="tooltip" 
                                             data-bs-placement="top" 
-                                            data-bs-original-title=Working&#32;as&#32;a&#32;IT&#32;Production&#32;-&#32;Technology&#32;Consultant&#32;at&#32;BNP&#32;Paribas&#32;CIB
+                                            data-bs-original-title=Contract&#32;role&#32;through&#32;Exalt-Fi&#32;North&#32;America
                                         >
                                             <i class="fas fa-info-circle fa-xs"></i>
                                         </span>
@@ -824,8 +789,22 @@ Throughout my senior year of college, I worked as an IT contractor, first at BNY
                                 
                             </div>
 
-                            I am currently working as a technology consultant with the IT Production Americas team in Jersey City, NJ
-Currently, my work focuses on managing the deployment of corporate devices across North and South America, MDM transitioning, and automating data visualization
+                            <p>AVP-level position within the IT Production team of the CTO Office of CIB</p>
+<ul>
+<li>Team: CTO Office - IT Production</li>
+</ul>
+<p>Core Projects</p>
+<ul>
+<li>Microsegmentation of all critcal assets with Illumio</li>
+<li>Critical Infrastructure Hardening aligned with CIS V8 &amp; DORA-EU</li>
+<li>Telecom ITAM - Physical &amp; Virtual
+<ul>
+<li>Cisco Phone Decom</li>
+<li>Corporate iPhone Deployments</li>
+</ul>
+</li>
+</ul>
+
                         </div>
                         
                         
@@ -833,23 +812,23 @@ Currently, my work focuses on managing the deployment of corporate devices acros
                         <div 
                             class="tab-pane fade bg-transparent" 
                             role="tabpanel"
-                            id='pills-Truso-Jan-2024---July-2024'
-                            aria-labelledby='pills-Truso-Jan-2024---July-2024-tab'
+                            id='pills-Truso-Jul-2024---present'
+                            aria-labelledby='pills-Truso-Jul-2024---present-tab'
                         >
                             <div>
-                                <span class="h4">IT Analyst</span>
+                                <span class="h4">IT Operations Analyst</span>
                                 <small>-</small>
-                                <a href="https://trusogroup.com/" target="_blank">Truso</a>
+                                <a href="" target="_blank">Truso</a>
                                 
                                 <div class="pb-1">
-                                    <small>Jan 2024 - July 2024</small>
+                                    <small>Jul 2024 - present</small>
                                     
                                     <span class="p-2">
                                         <span 
                                             style="cursor: pointer;" 
                                             data-bs-toggle="tooltip" 
                                             data-bs-placement="top" 
-                                            data-bs-original-title=Worked&#32;as&#32;a&#32;IT&#32;Analyst&#32;at&#32;Truso
+                                            data-bs-original-title=Contract&#32;role&#32;as&#32;a&#32;IT&#32;Operations&#32;Analyst
                                         > 
                                             <i class="fas fa-info-circle fa-xs"></i>
                                         </span>
@@ -863,7 +842,7 @@ Currently, my work focuses on managing the deployment of corporate devices acros
                             <div class="pt-2">
                                 <p>While working for Truso Group as an IT Analyst, some of my responsibilities included:</p>
 <ul>
-<li>Manage and oversee the migration of AD services to Azure Entra ID</li>
+<li>Coordinate the migration of on-prem IAM AD services to Azure Cloud-based solutions</li>
 <li>Developed a handbook to address common troubleshooting issues found in IT Support tickets</li>
 <li>Manage and configure VDI solutions for remote access, alongside GPOs with AD and EntraID to enforce security policies and automate resource allocation</li>
 </ul>
@@ -875,89 +854,127 @@ Currently, my work focuses on managing the deployment of corporate devices acros
                         <div 
                             class="tab-pane fade bg-transparent" 
                             role="tabpanel"
-                            id='pills-BNY-Mellon-May-2023---December-2023'
-                            aria-labelledby='pills-BNY-Mellon-May-2023---December-2023-tab'
+                            id='pills-BNY-Mellon-May-2023---Dec-2023'
+                            aria-labelledby='pills-BNY-Mellon-May-2023---Dec-2023-tab'
                         >
                             <div>
-                                <span class="h4">Investment Management - IT Project Coordinator</span>
+                                <span class="h4">IT Project Coordinator</span>
                                 <small>-</small>
-                                <a href="https://www.bnymellon.com/us/en/about-us/newsroom/company-news/bny-mellon-named-among-most-admired-and-most-just-companies-in-2023.html" target="_blank">BNY Mellon</a>
+                                <a href="https://example.com" target="_blank">BNY Mellon</a>
                                 
                                 <div class="pb-1">
-                                    <small>May 2023 - December 2023</small>
-                                    
-                                </div>
-                                
-                                
-                            </div>
-
-                            <div class="pt-2">
-                                <p>Contracted through Pride Technolgies - New York, NY for BNY Mellon | Pershing</p>
-<ul>
-<li>Analyst-level position within Pershing Core Engineering, reporting to Infrastructure Security Directors and PMO VPs</li>
-<li>Core Projects
-<ul>
-<li>Enterprise-wide End of Life Software Remediation iniative</li>
-<li>Global Registered Representative Identifier Expansion Project</li>
-</ul>
-</li>
-</ul>
-                            </div>
-                        </div>
-                        
-                        
-                        
-                        <div 
-                            class="tab-pane fade bg-transparent" 
-                            role="tabpanel"
-                            id='pills-TAMU-Jan-2023---present'
-                            aria-labelledby='pills-TAMU-Jan-2023---present-tab'
-                        >
-                            <div>
-                                <span class="h4">Undergraduate Student Researcher</span>
-                                <small>-</small>
-                                <a href="https://engineering.tamu.edu/etid/index.html" target="_blank">TAMU</a>
-                                
-                                <div class="pb-1">
-                                    <small>Jan 2023 - present</small>
-                                    
-                                </div>
-                                
-                                
-                            </div>
-
-                            <div class="pt-2">
-                                <p>During my undergraduate studies, I&rsquo;ve contributed to faculty-led research, assisted Technology Services with upgrade projects, and conducted my own research constructing a secure model for CI/CD Pipelines.</p>
-<ul>
-<li>Research Project - Developed a research paper identifying ITIL 4 applications to CI/CD pipelines, present and/or new.</li>
-<li>Research Project - Data mining for Dr. Ali Mostafavi&rsquo;s research on Disaster Informatics Solutions, Integrating Human and Machine Intelligence for Resilient Infrastructure and Smart Emergency</li>
-<li>Capstone Project - College Station Campus Cisco VoIP Upgrade</li>
-</ul>
-                            </div>
-                        </div>
-                        
-                        
-                        
-                        <div 
-                            class="tab-pane fade bg-transparent" 
-                            role="tabpanel"
-                            id='pills-Rolls-Royce-June-2018---August-2018'
-                            aria-labelledby='pills-Rolls-Royce-June-2018---August-2018-tab'
-                        >
-                            <div>
-                                <span class="h4">Industrial Intern</span>
-                                <small>-</small>
-                                <a href="https://www.rolls-royce.com/" target="_blank">Rolls Royce</a>
-                                
-                                <div class="pb-1">
-                                    <small>June 2018 - August 2018</small>
+                                    <small>May 2023 - Dec 2023</small>
                                     
                                     <span class="p-2">
                                         <span 
                                             style="cursor: pointer;" 
                                             data-bs-toggle="tooltip" 
                                             data-bs-placement="top" 
-                                            data-bs-original-title=Worked&#32;as&#32;a&#32;Industrial&#32;Intern&#32;at&#32;Rolls&#32;Royce
+                                            data-bs-original-title=Contract&#32;role&#32;through&#32;Pride&#32;Technologies&#32;-&#32;New&#32;York
+                                        > 
+                                            <i class="fas fa-info-circle fa-xs"></i>
+                                        </span>
+                                    </span>
+                                    
+                                </div>
+                                
+                                
+                                <div class="py-2 featuredLink">
+                                    <a class="p-2 px-4 btn btn-outline-primary btn-sm" href=https://www.bny.com/corporate/global/en.html target="_blank">
+                                        Featured Link 
+                                    </a>
+                                </div>
+                                
+                            </div>
+
+                            <div class="pt-2">
+                                <p>Analyst-level position reporting to Infrastructure Security Directors and Project Managers</p>
+<ul>
+<li>
+<p>Team: Investment Management - Pershing Core Engineering</p>
+</li>
+<li>
+<p>Core Projects</p>
+<ul>
+<li>Enterprise-wide End of Life Software Remediation iniative</li>
+<li>Global Registered Representative Identifier Expansion Project</li>
+</ul>
+</li>
+</ul>
+
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        <div 
+                            class="tab-pane fade bg-transparent" 
+                            role="tabpanel"
+                            id='pills-TAMU-Graduated-May-2024'
+                            aria-labelledby='pills-TAMU-Graduated-May-2024-tab'
+                        >
+                            <div>
+                                <span class="h4">Undergraduate Student Researcher</span>
+                                <small>-</small>
+                                <a href="https://example.com" target="_blank">TAMU</a>
+                                
+                                <div class="pb-1">
+                                    <small>Graduated May 2024</small>
+                                    
+                                    <span class="p-2">
+                                        <span 
+                                            style="cursor: pointer;" 
+                                            data-bs-toggle="tooltip" 
+                                            data-bs-placement="top" 
+                                            data-bs-original-title=Undergraduate&#32;research&#32;done&#32;under&#32;faculty&#32;supervision&#32;and&#32;guidance
+                                        > 
+                                            <i class="fas fa-info-circle fa-xs"></i>
+                                        </span>
+                                    </span>
+                                    
+                                </div>
+                                
+                                
+                                <div class="py-2 featuredLink">
+                                    <a class="p-2 px-4 btn btn-outline-primary btn-sm" href=https://example.com target="_blank">
+                                        Featured Link 
+                                    </a>
+                                </div>
+                                
+                            </div>
+
+                            <div class="pt-2">
+                                <p>During my undergraduate studies, I have contributed to faculty-led research, assisted Technology Services with upgrade projects, and conducted my own research constructing a secure model for CI/CD Pipelines.</p>
+<ul>
+<li>Research Project - Developed a research paper identifying ITIL 4 applications to CI/CD pipelines, present and/or new.</li>
+<li>Research Project - Data mining for Dr. Ali Mostafavi and his research on Disaster Informatics Solutions, Integrating Human and Machine Intelligence for Resilient Infrastructure and Smart Emergency</li>
+<li>Capstone Project - College Station Campus Cisco VoIP Upgrade (80K+ Phone Lines)</li>
+</ul>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        <div 
+                            class="tab-pane fade bg-transparent" 
+                            role="tabpanel"
+                            id='pills-Rolls-Royce-Feb-2016---Mar-2017'
+                            aria-labelledby='pills-Rolls-Royce-Feb-2016---Mar-2017-tab'
+                        >
+                            <div>
+                                <span class="h4">R&amp;D Intern</span>
+                                <small>-</small>
+                                <a href="https://example.com" target="_blank">Rolls Royce</a>
+                                
+                                <div class="pb-1">
+                                    <small>Feb 2016 - Mar 2017</small>
+                                    
+                                    <span class="p-2">
+                                        <span 
+                                            style="cursor: pointer;" 
+                                            data-bs-toggle="tooltip" 
+                                            data-bs-placement="top" 
+                                            data-bs-original-title=Worked&#32;as&#32;a&#32;R&amp;D&#32;Intern&#32;at&#32;Rolls&#32;Royce
                                         > 
                                             <i class="fas fa-info-circle fa-xs"></i>
                                         </span>
@@ -969,11 +986,21 @@ Currently, my work focuses on managing the deployment of corporate devices acros
                             </div>
 
                             <div class="pt-2">
-                                <p>Rolls-Royce Aero Department, FACT/HST Industrial Intern, on-site in Derby, UK</p>
+                                <ul>
+<li>
+<p>2018 - Horizon Scanning Team (HST) Intern</p>
 <ul>
-<li>(2018) Worked with the Future Aircraft Concepts Team with their Electric Vertical Takeoff &amp; Lift (eVTOL) program</li>
-<li>(2017) Worked with the Horizon Scanning Team to conduct research on the reusable space rocket industry for internal prototype developments</li>
+<li>Conducted various Ad-Hoc market research on eVTOL feasibility, competitor progress, and veracity of Ubers&rsquo; Elevate program</li>
 </ul>
+</li>
+<li>
+<p>2017 - Future Aircraft Concepts Team (FACT) Intern</p>
+<ul>
+<li>Developed a strong understanding for the Engineering V-Model of Systems Development by working rotationally with Trent turbine teams</li>
+</ul>
+</li>
+</ul>
+
                             </div>
                         </div>
                         
@@ -988,7 +1015,7 @@ Currently, my work focuses on managing the deployment of corporate devices acros
 
 <section id="achievements" class="py-5">
     <div class="container">
-        <h3 class="text-center">Industry Certifications</h3>
+        <h3 class="text-center">Certifications</h3>
         <div class="px-0 px-md-5 px-lg-5">
             <div class="row justify-content-center px-3 px-md-5 px-lg-5">
                 
@@ -997,15 +1024,13 @@ Currently, my work focuses on managing the deployment of corporate devices acros
                     <a class="card my-3 h-100 p-3" href="https://www.credly.com/badges/5d45741b-97df-427d-a596-c7afa9c90688/public_url" title="CompTIA Security&#43;" target="_blank">
                         
                             <div class="card-head">
-                                <img class="card-img-top" src="/photos/security.png">
+                                <img class="card-img-top" src="/documents-banners/photos/security.png">
                             </div>
                         
                         <div class="card-body bg-transparent">
                             <h5 class="card-title bg-transparent">CompTIA Security&#43;</h5>
                             <div class="card-text secondary-font">
                                 Verification ID - ZYQZ2EP61FQQ1R5L
-DoD Approved 8570 Baseline Certification:
-IAT Level II, IAM Level I
 
                             </div>
                         </div>
@@ -1015,14 +1040,14 @@ IAT Level II, IAM Level I
                 
                 
                 <div class="col-lg-4 col-md-6 my-3">
-                    <a class="card my-3 h-100 p-3" href="/photos/itilcert.pdf" title="ITIL 4 Foundation" target="_blank">
+                    <a class="card my-3 h-100 p-3" href="/documents-banners/itilcert.pdf" title="PeopleCert ITIL 4 Foundations" target="_blank">
                         
                             <div class="card-head">
-                                <img class="card-img-top" src="/photos/itil.png">
+                                <img class="card-img-top" src="/documents-banners/photos/itil.png">
                             </div>
                         
                         <div class="card-body bg-transparent">
-                            <h5 class="card-title bg-transparent">ITIL 4 Foundation</h5>
+                            <h5 class="card-title bg-transparent">PeopleCert ITIL 4 Foundations</h5>
                             <div class="card-text secondary-font">
                                 Certificate ID - GR671506197AJ
                             </div>
@@ -1031,305 +1056,7 @@ IAT Level II, IAM Level I
                 </div>
                 
                 
-                
-                <div class="col-lg-4 col-md-6 my-3">
-                    <div class="card my-3 h-100 p-3" title="CCNA">
-                        
-                            <div class="card-head">
-                                <img class="card-img-top" src="/photos/ccna.png">
-                            </div>
-                        
-                        <div class="card-body bg-transparent">
-                            <h5 class="card-title bg-transparent">CCNA</h5>
-                            <div class="card-text secondary-font">
-                                In Progress, ETA November 30, 2024
-Cisco Certified Network Associate
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                
             </div>
-        </div>
-    </div>
-</section>
-
-<section id="projects" class="py-5">
-    <div class="container">
-        <h3 class="text-center">Projects</h3>
-        <div class="row justify-content-center px-3 px-md-5">
-            
-            <div class="col-lg-4 col-md-6 my-3">
-                <div class="card my-3 h-100" title="Custom-built Firewall Appliance">
-                    <div class="card-head">
-                        <img class="card-img-top" src="/photos/router-ngfw.jpg" alt="Custom-built Firewall Appliance">
-                    </div>
-                    <div class="card-body bg-transparent p-3">
-                        <div class="pb-2 bg-transparent">
-                            
-                            <span class="badge badge-secondary">Next-Generation Firewall</span>
-                            
-                            <span class="badge badge-secondary">Open Source Router</span>
-                            
-                            <span class="badge badge-secondary">Security Hardening</span>
-                            
-                            <span class="badge badge-secondary">IDS/IPS</span>
-                            
-                            <span class="badge badge-secondary">IP Blocklists</span>
-                            
-                            <span class="badge badge-secondary">DHCP</span>
-                            
-                            <span class="badge badge-secondary">Network Segmentation</span>
-                            
-                        </div>
-                        <h5 class="card-title bg-transparent mt-1">Custom-built Firewall Appliance</h5>
-                        <div class="card-text bg-transparent secondary-font">
-                            Rebuilt a small form factor (SFF) desktop to serve as dedicated hardware router &#43; firewall appliance, using OPNsense alongside Zenarmor&#39;s NGFW to harden home network security
-                        </div>
-                    </div>
-                    
-                    <div class="card-footer py-3">
-                        
-                        
-                        <span class="float-end">
-                            <a class="btn btn-sm" href="https://austinhomelabs.com/shelves/network-projects" target="_blank">
-                                View Documentation
-                            </a>
-                        </span>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="col-lg-4 col-md-6 my-3">
-                <div class="card my-3 h-100" title="Kubernetes K8s">
-                    <div class="card-head">
-                        <img class="card-img-top" src="/photos/k8s.jpg" alt="Kubernetes K8s">
-                    </div>
-                    <div class="card-body bg-transparent p-3">
-                        <div class="pb-2 bg-transparent">
-                            
-                            <span class="badge badge-secondary">K8s</span>
-                            
-                            <span class="badge badge-secondary">Cluster Orchestration</span>
-                            
-                            <span class="badge badge-secondary">SOC</span>
-                            
-                            <span class="badge badge-secondary">Port Management</span>
-                            
-                            <span class="badge badge-secondary">Node Network Overlay</span>
-                            
-                            <span class="badge badge-secondary">Analytics Engine</span>
-                            
-                            <span class="badge badge-secondary">Data Visualization</span>
-                            
-                            <span class="badge badge-secondary">Case Management</span>
-                            
-                            <span class="badge badge-secondary">Incident Response</span>
-                            
-                        </div>
-                        <h5 class="card-title bg-transparent mt-1">Kubernetes K8s</h5>
-                        <div class="card-text bg-transparent secondary-font">
-                            Deploy and manage a k8 cluster to host TheHive Project, a Security Incident Response Platform (SIRP), using Elasticsearch, Apache Cassandra,  and Minio S3s
-                        </div>
-                    </div>
-                    
-                    <div class="card-footer py-3">
-                        
-                        
-                        <span class="float-end">
-                            <a class="btn btn-sm" href="https://austinhomelabs.com/shelves/kubernetes" target="_blank">
-                                View Documentation
-                            </a>
-                        </span>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="col-lg-4 col-md-6 my-3">
-                <div class="card my-3 h-100" title="tailscale">
-                    <div class="card-head">
-                        <img class="card-img-top" src="/photos/ts.webp" alt="tailscale">
-                    </div>
-                    <div class="card-body bg-transparent p-3">
-                        <div class="pb-2 bg-transparent">
-                            
-                            <span class="badge badge-secondary">WireGuard</span>
-                            
-                            <span class="badge badge-secondary">VPN</span>
-                            
-                            <span class="badge badge-secondary">Secure Remote Access</span>
-                            
-                            <span class="badge badge-secondary">Port Mapping</span>
-                            
-                            <span class="badge badge-secondary">Subnetting</span>
-                            
-                        </div>
-                        <h5 class="card-title bg-transparent mt-1">tailscale</h5>
-                        <div class="card-text bg-transparent secondary-font">
-                            A WireGuard-based, software-defined mesh network for remote access. An alternative to traditional VPNs with zero-connfigurations, high speed, and reliable connections
-                        </div>
-                    </div>
-                    
-                    <div class="card-footer py-3">
-                        
-                        
-                        <span class="float-end">
-                            <a class="btn btn-sm" href="https://austinhomelabs.com/shelves/network-projects" target="_blank">
-                                View Documentation
-                            </a>
-                        </span>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="col-lg-4 col-md-6 my-3">
-                <div class="card my-3 h-100" title="WireGuard VPN &#43; Cloudflare DDNS">
-                    <div class="card-head">
-                        <img class="card-img-top" src="/photos/wg.jpg" alt="WireGuard VPN &#43; Cloudflare DDNS">
-                    </div>
-                    <div class="card-body bg-transparent p-3">
-                        <div class="pb-2 bg-transparent">
-                            
-                            <span class="badge badge-secondary">Dynamic DNS</span>
-                            
-                            <span class="badge badge-secondary">VPN</span>
-                            
-                            <span class="badge badge-secondary">Secure Remote Access</span>
-                            
-                            <span class="badge badge-secondary">Firewall Rule Configuration</span>
-                            
-                            <span class="badge badge-secondary">DDNS Client</span>
-                            
-                            <span class="badge badge-secondary">Public/Private Key Management</span>
-                            
-                            <span class="badge badge-secondary">Subnetting</span>
-                            
-                        </div>
-                        <h5 class="card-title bg-transparent mt-1">WireGuard VPN &#43; Cloudflare DDNS</h5>
-                        <div class="card-text bg-transparent secondary-font">
-                            Installed a Dynamic DNS client to update Cloudflare records with their API, to serve as an endpoint for a WireGuard VPN tunnel to enable remote access to locally hosted services and devices on my LAN interfaces.
-                        </div>
-                    </div>
-                    
-                    <div class="card-footer py-3">
-                        
-                        
-                        <span class="float-end">
-                            <a class="btn btn-sm" href="https://austinhomelabs.com/shelves/network-projects" target="_blank">
-                                View Documentation
-                            </a>
-                        </span>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="col-lg-4 col-md-6 my-3">
-                <div class="card my-3 h-100" title="Grafana Dashboards">
-                    <div class="card-head">
-                        <img class="card-img-top" src="/photos/proxmoxdash.png" alt="Grafana Dashboards">
-                    </div>
-                    <div class="card-body bg-transparent p-3">
-                        <div class="pb-2 bg-transparent">
-                            
-                            <span class="badge badge-secondary">influxDB</span>
-                            
-                            <span class="badge badge-secondary">Telegraf</span>
-                            
-                            <span class="badge badge-secondary">Server-side Agent</span>
-                            
-                            <span class="badge badge-secondary">Docker Engine</span>
-                            
-                            <span class="badge badge-secondary">Containerization</span>
-                            
-                            <span class="badge badge-secondary">Data Aggregation</span>
-                            
-                            <span class="badge badge-secondary">Data Visualization</span>
-                            
-                            <span class="badge badge-secondary">ACL Configurations / VLAN Management</span>
-                            
-                        </div>
-                        <h5 class="card-title bg-transparent mt-1">Grafana Dashboards</h5>
-                        <div class="card-text bg-transparent secondary-font">
-                            Created a monitoring dashboard populated with data from my network firewall, VMs run in my lab environments, SIEM analytics, and status of scheduled updates.
-                        </div>
-                    </div>
-                    
-                    <div class="card-footer py-3">
-                        
-                        <span class="m-1 mx-2">
-                            <a href="https://hub.docker.com/u/ajohn1522" target="_blank">
-                                <i class="fab fa-docker"></i>
-                            </a>
-                        </span>
-                        
-                        
-                        <span class="float-end">
-                            <a class="btn btn-sm" href="https://austinhomelabs.com/shelves/grafana-dashboards" target="_blank">
-                                View Documentation
-                            </a>
-                        </span>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="col-lg-4 col-md-6 my-3">
-                <div class="card my-3 h-100" title="Cyber Learning Lab (In-Progress)">
-                    <div class="card-head">
-                        <img class="card-img-top" src="/photos/infra1.jpg" alt="Cyber Learning Lab (In-Progress)">
-                    </div>
-                    <div class="card-body bg-transparent p-3">
-                        <div class="pb-2 bg-transparent">
-                            
-                            <span class="badge badge-secondary">Dell PowerEdge R640</span>
-                            
-                            <span class="badge badge-secondary">iDRAC9</span>
-                            
-                            <span class="badge badge-secondary">Proxmox VE</span>
-                            
-                            <span class="badge badge-secondary">Splunk</span>
-                            
-                            <span class="badge badge-secondary">Nessus</span>
-                            
-                            <span class="badge badge-secondary">Kali</span>
-                            
-                            <span class="badge badge-secondary">Active Directory</span>
-                            
-                            <span class="badge badge-secondary">RDP</span>
-                            
-                        </div>
-                        <h5 class="card-title bg-transparent mt-1">Cyber Learning Lab (In-Progress)</h5>
-                        <div class="card-text bg-transparent secondary-font">
-                            Built an isolated lab environment within my home network to simulate Enterprise IT infrastructrure. Configured VLANs, Windows Server 2022, Splunk SIEM, Nessus Tennable Vulnerability Scanner, and managed several &#34;users&#34; with Active Directory, all within a node hosted on Proxmox Virtual Environment.
-                        </div>
-                    </div>
-                    
-                    <div class="card-footer py-3">
-                        
-                        
-                        <span class="float-end">
-                            <a class="btn btn-sm" href="https://austinhomelabs.com/shelves/infrastructure-simulation" target="_blank">
-                                View Documentation
-                            </a>
-                        </span>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            
         </div>
     </div>
 </section>
@@ -1350,10 +1077,10 @@ Cisco Certified Network Associate
                                 <div class="float-end">
                                     <small>2024</small>
                                 </div>
-                                <h5 class="card-title">Bachelor of Science in Technology Management, Minor in Business Administration</h5>
+                                <h5 class="card-title">Bachelor of Science in Technology Management</h5>
                                 
                                 
-                                <a href="https://example.org" target="_blank">
+                                <a href="https://catalog.tamu.edu/archives/2023-2024/undergraduate/engineering/technology-industrial-distribution/technology-management-bs/" target="_blank">
                                     <h6>
                                     Texas A&amp;M University - College Station, TX
                                     </h6>
@@ -1362,44 +1089,33 @@ Cisco Certified Network Associate
 
                                 
                                 <div class="py-1 education-content">
-                                    <p>Student Research</p>
+                                    <p>Urban Resilience.AI Laboratory - Research Assistant</p>
 <ul>
-<li>ITIL 4 Applications to CI/CD Pipelines
+<li>Collaborated with Dr. Ali Mostafavi on the research project:
 <ul>
-<li>Worked with Dr.Sweeney to create a hybrid workflow model integrating 13 ITIL 4 practices and frameworks into a CI/CD pipeline</li>
-</ul>
-</li>
-<li>Urban Resilience.AI Laboratory
-<ul>
-<li>Collaborated with Dr. Ali Mostafavi to enhance data mining efforts for his research, Disaster Informatics Solutions, Integrating Human and Machine Intelligence for Resilient Infrastructure and Smart Emergency</li>
-<li>Utilized an AI program to sort 50,000+ files and identify optimal reference objects within images to calculate elevation changes pre- and post-Hurricane Harvey</li>
+<li>Disaster Informatics Solutions: Integrating Human and Machine Intelligence for Resilient &amp; Smart Emergency</li>
+<li>Developed python scripts to query images of all residential houses in the Greater Houston Area from Google Maps APIs</li>
+<li>Developed an algorithm to identify optimal reference objects per image to use for distance calculations, to determine the Change in elevation Post-Hurricane Harvey</li>
 </ul>
 </li>
 </ul>
-<p>Senior Capstone Project</p>
+<p>ITIL 4 Applications to CI/CD Pipelines - Student Researcher</p>
 <ul>
-<li>Cisco VoIP Upgrade Project with Technology Services
+<li>Collaborated with Dr. David Sweeney, ITIL Master, to conduct research on real-world applications of ITIL 4 practices to CI/CD pipelines
 <ul>
-<li>Collaborated with University Technology Services to implement Phase II of the initiative, developing asset replacement processes incorporating ITIL 4 framework of release management and Agile practices</li>
+<li>Developed a CI/CD model, identifying crtical phases of the pipeline in which adherence to ITIL practices must be a requirement, ensuring secure software design &amp; development</li>
 </ul>
 </li>
 </ul>
 <p>Extracurricular Activities</p>
 <ul>
-<li>Technology Management Society - Texas A&amp;M Chapter</li>
-<li>Beta Chi Theta (PI Chapter) - President 2021-2022</li>
-<li>Texas A&amp;M Cybersecurity Club</li>
+<li>Beta Chi Theta - PI Chapter - President</li>
+<li>Technology Management Honor Society</li>
 <li>Society of Flight Test Engineers</li>
 </ul>
 
                                 </div>
 
-                                
-                                <div class="py-1">
-                                    <a href="https://catalog.tamu.edu/archives/2022-2023/undergraduate/engineering/technology-industrial-distribution/technology-management-bs/#text" class="btn">
-                                        Relevant Courses
-                                    </a>
-                                </div>
                                 
                             </div>
                         </div>
@@ -1417,19 +1133,19 @@ Cisco Certified Network Associate
                                 <div class="float-end">
                                     <small>2019</small>
                                 </div>
-                                <h5 class="card-title">High School</h5>
+                                <h5 class="card-title">High School Diploma</h5>
                                 
                                 
-                                <a href="https://jps.edison.k12.nj.us/" target="_blank">
+                                <a href="https://example.org" target="_blank">
                                     <h6>
-                                    JP Stevens - Edison, NJ
+                                    JP Stevens High School - Edison, NJ
                                     </h6>
                                 </a>
                                 
 
                                 
                                 <div class="py-1 education-content">
-                                    <p>Extracurriculars</p>
+                                    <p>Extracurricular Activities</p>
 <ul>
 <li>NJ FCCLA State VP of Finance</li>
 <li>4 year varisty soccer, Captain</li>
@@ -1450,6 +1166,169 @@ Cisco Certified Network Associate
 </section>
 
 
+<section id="projects" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Research &amp; Projects</h3>
+        <div class="row justify-content-center px-3 px-md-5">
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="OPNsense Firewall Appliance">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/documents-banners/photos/opnsense1.jpg" alt="OPNsense Firewall Appliance">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">Custom-built Appliance</span>
+                            
+                            <span class="badge badge-secondary">IDS/IPS Rulesets</span>
+                            
+                            <span class="badge badge-secondary">DNS</span>
+                            
+                            <span class="badge badge-secondary">Network Segmentation</span>
+                            
+                            <span class="badge badge-secondary">Fail-over Continuity</span>
+                            
+                            <span class="badge badge-secondary">Next-Gen Firewall (ZenArmor)</span>
+                            
+                            <span class="badge badge-secondary">Proxy Services (Squid)</span>
+                            
+                            <span class="badge badge-secondary">Waxuh Integration</span>
+                            
+                            <span class="badge badge-secondary">Grafana Data Visualization</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">OPNsense Firewall Appliance</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            Repurposed a Dell Optiplex into a firewall router by adding a 4-Port NIC and deploying OPNsense. OPNsense is an opensource firewall and routing platform. I&#39;ve been using this in my home office for the last 2 years, regularly maintaining rulesets and updating IDS/IPS rules to maintain security posture
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="mailto:?subject=Hugo%20Profile%20Template&amp;body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f" target="_blank">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        </span>
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://github.com/gurusabarish/hugo-profile" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </span>
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://twitter.com/intent/tweet?text=Check&#43;it&#43;out:&amp;url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </span>
+                        
+                        
+                        <span class="float-end">
+                            <a class="btn btn-sm" href="https://austinhomelabs.com/shelves/network-projects" target="_blank">
+                                See Results
+                            </a>
+                        </span>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="WireGuard VPN">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/images/projects/converter.jpg" alt="WireGuard VPN">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">Remote Access Management</span>
+                            
+                            <span class="badge badge-secondary">Dynamic DNS (DDNS)</span>
+                            
+                            <span class="badge badge-secondary">Virtual Private Networks</span>
+                            
+                            <span class="badge badge-secondary">Firewall Rulesets &amp; Whitelists</span>
+                            
+                            <span class="badge badge-secondary">Port Forwarding &amp; NAT</span>
+                            
+                            <span class="badge badge-secondary"></span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">WireGuard VPN</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            Established a WireGuard VPN with CloudFlare DDNS to enable remote access to my home devices and account for dynamic WAN IPs
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://github.com/gurusabarish/converter" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </span>
+                        
+                        
+                        <span class="float-end">
+                            <a class="btn btn-sm" href="https://austinhomelabs.com/books/wireguard-vpn" target="_blank">
+                                See Results
+                            </a>
+                        </span>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="InfoSec Home Lab (In Progress)">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/documents-banners/photos/infra1.jpg" alt="InfoSec Home Lab (In Progress)">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">Hugo</span>
+                            
+                            <span class="badge badge-secondary">Bootstrap</span>
+                            
+                            <span class="badge badge-secondary">Javascript</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">InfoSec Home Lab (In Progress)</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            Built an isolated lab environment within my home network to simulate Enterprise IT infrastructrure. Configured VLANs, Windows Server 2022, Splunk SIEM, Nessus Tennable Vulnerability Scanner, and managed several &#34;user&#34; VMs with Active Directory, all within a node on a Proxmox hypervisor
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://github.com/gurusabarish/HugoProfileV2" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </span>
+                        
+                        
+                        <span class="float-end">
+                            <a class="btn btn-sm" href="https://hugo-profile-2.netlify.app" target="_blank">
+                                View My Progress
+                            </a>
+                        </span>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</section>
+
 <section id="contact" class="py-5">
     <div class="container">
         <h3 class="text-center">Get in Touch</h3>
@@ -1457,7 +1336,7 @@ Cisco Certified Network Associate
             <div class="row justify-content-center px-md-5">
                 <div class="col-md-8 py-3">
                     <div class="text-center">
-                        Don&rsquo;t hesitate to shoot me an email with any question you may have!
+                        You can reach me via email or phone, I&rsquo;ll try my best to get back to you within 1-2 days!
                     </div>
                     
                     <div class="text-center pt-3">
@@ -1468,7 +1347,7 @@ Cisco Certified Network Associate
                             target="_blank"
                             class="btn"
                         >
-                            Mail me
+                            Email Me
                         </a>
                     </div>
                     
@@ -1501,7 +1380,7 @@ Cisco Certified Network Associate
     <span class="px-1">
         <a href="https://github.com/austinj1522" aria-label="github">
             <svg xmlns="http://www.w3.org/2000/svg" width="2.7em" height="2.7em" viewBox="0 0 1792 1792">
-                <path
+                <path id="footer-socialNetworks-github-svg-path"
                     d="M522 1352q-8 9-20-3-13-11-4-19 8-9 20 3 12 11 4 19zm-42-61q9 12 0 19-8 6-17-7t0-18q9-7 17 6zm-61-60q-5 7-13 2-10-5-7-12 3-5 13-2 10 5 7 12zm31 34q-6 7-16-3-9-11-2-16 6-6 16 3 9 11 2 16zm129 112q-4 12-19 6-17-4-13-15t19-7q16 5 13 16zm63 5q0 11-16 11-17 2-17-11 0-11 16-11 17-2 17 11zm58-10q2 10-14 14t-18-8 14-15q16-2 18 9zm964-956v960q0 119-84.5 203.5t-203.5 84.5h-224q-16 0-24.5-1t-19.5-5-16-14.5-5-27.5v-239q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-121-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-86-13.5q-44 113-7 204-79 85-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-40 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 103t.5 68q0 22-11 33.5t-22 13-33 1.5h-224q-119 0-203.5-84.5t-84.5-203.5v-960q0-119 84.5-203.5t203.5-84.5h960q119 0 203.5 84.5t84.5 203.5z" />
 
                 <metadata>
@@ -1546,50 +1425,60 @@ Cisco Certified Network Associate
 </div><div class="container py-4">
     <div class="row justify-content-center">
         <div class="col-md-4 text-center">
-            <div class="pb-2">
-                <a href="https://austinj1522.github.io/" title="Austin&#39;s Portfolio">
-                    <img alt="Footer logo" src="/photos/landing.png"
-                        height="40px" width="40px">
+            
+                <div class="pb-2">
+                    <a href="http://localhost:1313/" title="ALJ - Portfolio Website">
+                        <img alt="Footer logo" src="/documents-banners/photos/landing.png"
+                            height="40px" width="40px">
+                    </a>
+                </div>
+            
+            &copy; 2025  All rights reserved
+            <div class="text-secondary">
+                Made with
+                <span class="text-danger">
+                    &#10084;
+                </span>
+                and
+                <a href="https://github.com/gurusabarish/hugo-profile" target="_blank"
+                    title="Designed and developed by gurusabarish">
+                    Hugo Profile
                 </a>
             </div>
-            &copy; 2024  All rights reserved
-
         </div>
     </div>
-</div></footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+</div>
+</footer><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 <script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
+    if (document.body.className.includes("dark")) {
+        document.body.classList.remove('dark');
+        localStorage.setItem("pref-theme", 'light');
     }
-
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            document.body.classList.add('dark');
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
-
-    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-        return new bootstrap.Tooltip(tooltipTriggerEl)
-    })
-
 </script>
 
 
-    <script src="/js/search.js"></script>
 
 
 
+
+
+
+<!-- MathJax -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js" integrity="sha384-M5jmNxKC9EVnuqeMwRHvFuYUE8Hhp0TgBruj/GZRkYtiMrCRgH7yvv5KY+Owi7TW" crossorigin="anonymous"></script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\[','\]']],
+        processEscapes: true,
+        processEnvironments: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        TeX: { equationNumbers: { autoNumber: "AMS" },
+             extensions: ["AMSmath.js", "AMSsymbols.js"] }
+      }
+    });
+</script>
 
 
 
