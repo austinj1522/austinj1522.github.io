@@ -59,9 +59,9 @@
         --secondary-color: #f8f9fa;
 
          
-        --text-color-dark: #e4e6eb;
-        --text-secondary-color-dark: #b0b3b8;
-        --text-link-color-dark: #ffffff;
+        --text-color-dark: #EFF5ED;
+        --text-secondary-color-dark: #D3DBD3;
+        --text-link-color-dark: #D0F2DE;
         --background-color-dark: #18191a;
         --secondary-background-color-dark: #212529;
         --primary-color-dark: #ffffff;
@@ -281,6 +281,28 @@ ALJ - Portfolio Website
                     
                     
 
+                    
+                    <li class="nav-item navbar-text">
+                        
+                        <div class="text-center">
+                            <button id="theme-toggle">
+                                <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                                </svg>
+                                <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="5"></circle>
+                                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                                </svg>
+                            </button>
+                        </div>
+                    </li>
                     
 
                 </ul>
@@ -654,7 +676,7 @@ ALJ - Portfolio Website
                     
                     <li>NIST SP-800</li>
                     
-                    <li>NYDFS NYCRR pt.500</li>
+                    <li>NYDFS NYCRR pt.500.14-15</li>
                     
                     <li>Cryptographic Key Management System (CKMS)</li>
                     
@@ -1039,6 +1061,24 @@ ALJ - Portfolio Website
                             <div class="card-text secondary-font">
                                 Verification ID - ZYQZ2EP61FQQ1R5L
 
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                
+                
+                <div class="col-lg-4 col-md-6 my-3">
+                    <a class="card my-3 h-100 p-3" href="/documents-banners/itilcert.pdf" title="ISC2 - CISSP" target="_blank">
+                        
+                            <div class="card-head">
+                                <img class="card-img-top" src="/documents-banners/photos/CISSP.png">
+                            </div>
+                        
+                        <div class="card-body bg-transparent">
+                            <h5 class="card-title bg-transparent">ISC2 - CISSP</h5>
+                            <div class="card-text secondary-font">
+                                In Progress (expected June 2025)
                             </div>
                         </div>
                     </a>
@@ -1547,6 +1587,23 @@ ALJ - Portfolio Website
 </script>
 
 
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+
+</script>
 
 
 
