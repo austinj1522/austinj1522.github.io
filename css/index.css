@@ -204,6 +204,9 @@ header .navbar.animate {
     transition: box-shadow 0.3s;
     padding: 0;
     border: 0;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
 }
 
 #about .image img:hover {
